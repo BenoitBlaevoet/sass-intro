@@ -1,0 +1,21 @@
+#wrapper{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+div{
+    height: 400px;
+    background-color: aqua;
+}
+#A{
+    background-color: brown;
+    display: flex;
+    align-items: center;
+}
+#photo{
+    display: block;
+    position: relative;
+    right: -100px;
+    width: 200px;
+    height: 200px;
+    background-color: forestgreen;
+}
