@@ -1,23 +1,61 @@
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
 .card {
+  margin: 50px;
   background: url("../images/india.jpg") no-repeat;
+  background-size: 160%;
   width: 350px;
   height: 450px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 50px 1fr;
-      grid-template-rows: 50px 1fr;
+  display: flex;
+  flex-direction: column;
 }
-
+.card:hover {
+  background-size: 190%;
+}
 .card .date {
-  width: 50px;
-  height: 50px;
+  margin-left: auto;
+  margin-top: 10px;
+  margin-right: 10px;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  box-sizing: border-box;
   border-radius: 50%;
+  color: #fefefe;
   background-color: #db3939;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
 }
-
-.card .card-content p {
+.card .card-content {
+  margin-top: 250px;
+  flex-grow: 1;
+  background-color: #fefefe;
+}
+.card .card-content .media-type {
+  background-color: #db3939;
+  color: #fefefe;
+  text-transform: uppercase;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0 20px;
+  position: relative;
+  top: -37px;
+}
+.card .card-content .media-type p {
+  margin: 10px auto;
+}
+.card .card-content h2 {
+  margin-top: 0;
+  text-transform: uppercase;
+}
+.card .card-content h3 {
+  color: #db3939;
+}
+.card .card-content .description-content {
   display: none;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
