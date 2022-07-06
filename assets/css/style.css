@@ -1,0 +1,23 @@
+.card {
+  background: url("../images/india.jpg") no-repeat;
+  width: 350px;
+  height: 450px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 50px 1fr;
+      grid-template-rows: 50px 1fr;
+}
+
+.card .date {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #db3939;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.card .card-content p {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */
