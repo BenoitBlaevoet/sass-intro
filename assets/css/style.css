@@ -7,36 +7,45 @@ h1, h2, h3 {
 }
 
 .card {
+  transition: all 1s;
   margin: 50px;
   background: url("../images/india.jpg") no-repeat;
   background-size: 160%;
   width: 350px;
-  height: 450px;
+  height: 530px;
+  overflow: hidden;
   display: flex;
+  position: relative;
   flex-direction: column;
+  box-shadow: 1px 1px 3px 1px #ddd;
 }
-.card:hover {
-  background-size: 190%;
+.card * {
+  transition: all 1s;
 }
 .card .date {
   margin-left: auto;
   margin-top: 10px;
   margin-right: 10px;
+  margin-bottom: 10px;
   text-align: center;
-  width: 60px;
-  height: 60px;
-  padding: 10px;
-  box-sizing: border-box;
-  border-radius: 50%;
   color: #fefefe;
+  padding: 25px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
   background-color: #db3939;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .card .card-content {
   margin-top: 250px;
   flex-grow: 1;
   background-color: #fefefe;
+  padding: 0 25px;
 }
 .card .card-content .media-type {
+  left: -25px;
   background-color: #db3939;
   color: #fefefe;
   text-transform: uppercase;
@@ -57,5 +66,37 @@ h1, h2, h3 {
   color: #db3939;
 }
 .card .card-content .description-content {
-  display: none;
+  opacity: 0;
+}
+.card .card-action {
+  padding: 0 25px 25px 25px;
+  color: #666;
+  background-color: #fefefe;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  bottom: 0;
+}
+.card .card-action div + div {
+  margin-left: 20px;
+}
+.card .card-action .publication-time {
+  display: inline;
+}
+.card .card-action .comments:hover {
+  text-decoration: underline;
+}
+.card .card-action a {
+  text-decoration: none;
+  color: inherit;
+}
+.card:hover {
+  background-size: 190%;
+  box-shadow: 2px 2px 5px 2px #666;
+}
+.card:hover .card-content {
+  margin-top: 120px;
+}
+.card:hover .description-content {
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */
